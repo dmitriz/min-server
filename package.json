@@ -1,7 +1,7 @@
 {
   "name": "min-server",
-  "version": "0.1.0",
-  "main": "server.js",
+  "version": "0.1.1",
+  "main": "index.js",
   "description": "Minimal Server with Live Reload",
   "license": "ISC",
   "repository": {
@@ -12,7 +12,6 @@
   "config": {
     "port": "8001"
   },
-  "main": "index.js",
   "files": [
     "index.js",
     "Gulpfile.js",
