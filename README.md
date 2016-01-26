@@ -19,7 +19,7 @@ Minimal and fast Server with Live Reload and [*Package*](https://www.npmjs.com/p
 ## Why not something else?
 - [`live-server`](https://github.com/tapio/live-server) is small and awesome but unfortunately slow; there is noticeable delay between the change in your file and its effect in the browser. 
 - [`browser-sync`](https://github.com/BrowserSync/browser-sync) is incredibly powerful and fast but (a) is massive with 25MB total to download and (b) flashes "Connected with Browser-Sync" in a large black on box top of your page on every reload.
-- [`webpack-dev-server`](https://github.com/webpack/webpack-dev-server) is promising and can do great if you are using [Webpack](https://webpack.github.io/) but it feels like too much "magic" that may break any time you do anything "non-standard". Specifically it didn't reload the main `html` file when I tried to change it.
+- [`webpack-dev-server`](https://github.com/webpack/webpack-dev-server) is promising and can do great if you are using [Webpack](https://webpack.github.io/) but it feels like too much "magic" that may break any time you do anything "non-standard". Specifically it didn't reload the main `html` file when I tried to change it. Hopefully things will improve, including the documentation :)
 
 
 ## Why [Gulp](https://github.com/gulpjs/gulp) plugins?
