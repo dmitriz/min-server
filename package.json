@@ -1,12 +1,11 @@
 {
   "name": "min-server",
-  "version": "1.0.0",
   "main": "index.js",
   "description": "Minimal Server with Live Reload",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dmitriz/min-server.git"
+    "url": "https://github.com/dmitriz/min-server.git"
   },
   "author": "Dmitri Zaitsev <dmitri14@gmail.com> (https://github.com/dmitriz)",
   "config": {
@@ -21,7 +20,8 @@
     "start": "gulp",
     "pub": "npm version patch && npm publish && git push",
     "sync": "git ac && git pull --rebase && git push",
-    "postinstall": "node index.js"
+    "postinstall": "node index.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [
     "min-server",
@@ -40,5 +40,8 @@
     "gulp-connect": "^2.3.1",
     "gulp-livereload": "^3.8.1",
     "opn": "^4.0.0"
+  },
+  "devDependencies": {
+    "semantic-release": "^4.3.5"
   }
 }
