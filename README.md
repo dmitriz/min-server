@@ -59,7 +59,7 @@ Minimal and fast Server with Live Reload and [*Package*](https://www.npmjs.com/p
     })
     ```
 
-    - Feature the awesome [better stuff opener](https://github.com/sindresorhus/opn):
+    - Featuring the awesome [better stuff opener](https://github.com/sindresorhus/opn):
 
     ```js
     gulp.task('serve', ['connect'], function () {
