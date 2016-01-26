@@ -30,7 +30,7 @@ Minimal and fast Server with Live Reload and [*Package*](https://www.npmjs.com/p
 
 
 ## Why not `npm` scripts?
-The `npm` scripts [provide a powerful tool](http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/) to ease and automate your workflow and I love using them. However, the [proposed livereload solution](https://github.com/keithamus/npm-scripts-example/blob/master/package.json) has 2 problem points:
+The `npm` scripts [provide a powerful tool](http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/) to ease and automate your workflow and I love using them. However, the [proposed livereload solution](https://github.com/keithamus/npm-scripts-example/blob/master/package.json) has 2 problematic points:
 
 - You need to run both server and watcher from the same shell, and the proposed way is to use [parallelshell](https://github.com/keithamus/parallelshell) which is not a robust tool such as Gulp. Specifically trying `npm run dev` as suggested leads to some error that, after termination, leave 4 processes running in background that you have to kill manually, or else you can't access the same ports. Not fun.
 - It requires to "highjack" your source files with script tags that I don't feel belong there:
