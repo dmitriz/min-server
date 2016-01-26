@@ -16,7 +16,7 @@ Minimal and fast Server with Live Reload and [*Package*](https://www.npmjs.com/p
 
 ## Why not something else?
 - [`live-server`](https://github.com/tapio/live-server) is small and awesome but unfortunately slow; there is noticeable delay between the change in your file and its effect in the browser. 
-- [`browser-sync`](https://github.com/BrowserSync/browser-sync) is incredibly powerful and fast but (a) is massive at 25MB and (b) flashes "Connected with Browser-Sync" in large black box top of your screen on every reload.
+- [`browser-sync`](https://github.com/BrowserSync/browser-sync) is incredibly powerful and fast but (a) is massive with 25MB total to download and (b) flashes "Connected with Browser-Sync" in a large black on box top of your page on every reload.
 
 
 ## Why [Gulp](https://github.com/gulpjs/gulp) plugins?
