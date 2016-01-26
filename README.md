@@ -19,12 +19,27 @@ Minimal and fast Server with Live Reload and [*Package*](https://www.npmjs.com/p
 ## Why not something else?
 - [`live-server`](https://github.com/tapio/live-server) is small and awesome but unfortunately slow; there is noticeable delay between the change in your file and its effect in the browser. 
 - [`browser-sync`](https://github.com/BrowserSync/browser-sync) is incredibly powerful and fast but (a) is massive with 25MB total to download and (b) flashes "Connected with Browser-Sync" in a large black on box top of your page on every reload.
+- [`webpack-dev-server`](https://github.com/webpack/webpack-dev-server) is promising and can do great if you are using [Webpack](https://webpack.github.io/) but it feels like too much "magic" that may break any time you do anything "non-standard".
 
 
 ## Why [Gulp](https://github.com/gulpjs/gulp) plugins?
 - Fast: use streams, no temporary files.
 - Gulp plugins have uniform API: stream in, stream out; no massive command line options.
 - Convenient and expressive [node-glob](https://github.com/isaacs/node-glob) abstraction to select files/directories to be watched.
+- Less magic, more control and understanding of what is going on, less chance and dependence on bugs.
+
+
+## Why not `npm` scripts?
+The `npm` scripts [provide a powerful tool](http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/) to ease and automate your workflow and I love using them. However, the [proposed livereload solution](https://github.com/keithamus/npm-scripts-example/blob/master/package.json) has 2 problem points:
+
+- You need to run both server and watcher from the same shell, and the proposed way is to use [parallelshell](https://github.com/keithamus/parallelshell) which is not a robust tool such as Gulp. Specifically trying `npm run dev` as suggested leads to some error that, after termination, leave 4 processes running in background that you have to kill manually, or else you can't access the same ports. Not fun.
+- It requires to "highjack" your source files with script tags that I don't feel belong there:
+
+```html
+  <script src="//localhost:9091/livereload.js"></script>
+```
+
+[A more recent article](https://medium.com/@housecor/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8#.kc05r0ilm) again advocated in favor of `npm` scripts. However, it did not provide any viable alternative for a LiveReload server, nor any of the of recommended sources did, as far as I could see.
 
 
 ## Use cases
