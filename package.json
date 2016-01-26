@@ -1,6 +1,6 @@
 {
   "name": "min-server",
-  "version": "0.1.6",
+  "version": "1.0.0",
   "main": "index.js",
   "description": "Minimal Server with Live Reload",
   "license": "ISC",
