@@ -3,6 +3,9 @@
   "strict"        : false,  // Require `use strict` pragma  in every file.
   "globalstrict"  : true,   // Allow global "use strict" (also enables 'strict').
   "predef"      : [         // Custom globals.
-    "require"
+    "require",
+    "expect",
+    "describe",
+    "it"
   ]
 }
