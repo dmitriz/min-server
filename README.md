@@ -1,7 +1,7 @@
 # min-server
 Minimal and fast Server with Live Reload and [*Package*](https://www.npmjs.com/package/min-server) &mdash; never again manually reload your browser!
 
-[![Dependency Status](https://david-dm.org/dmitriz/min-server.svg)](https://david-dm.org/dmitriz/min-server)
+[![Dependency Status](https://david-dm.org/dmitriz/min-server.svg)](https://david-dm.org/dmitriz/min-server) [![Code Climate](https://codeclimate.com/github/dmitriz/min-server/badges/gpa.svg)](https://codeclimate.com/github/dmitriz/min-server)
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
