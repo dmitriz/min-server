@@ -26,7 +26,7 @@ Minimal and fast Server with Live Reload and [*Package*](https://www.npmjs.com/p
 
 
 ## Use cases
-- You have a project and want to add server and live reload; [install the package](#to-use-as-package-add-to-your-project).
+- You have a project and want to add server and live reload &mdash; [install the package](#to-use-as-package-add-to-your-project).
 - You want to quickly play and evaluate LiveReload in a clean folder &mdash; [clone or download the repository](#to-use-as-separate-repository).
 
 
