@@ -45,7 +45,7 @@
     "snyk": "^1.169.1"
   },
   "devDependencies": {
-    "semantic-release": "^4.3.5"
+    "semantic-release": "4.3.5"
   },
   "snyk": true
 }
