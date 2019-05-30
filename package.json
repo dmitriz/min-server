@@ -40,7 +40,7 @@
     "gulp": "^4.0.0",
     "gulp-connect": "^5.6.1",
     "gulp-livereload": "^3.8.1",
-    "opn": "^4.0.0"
+    "opn": "^5.0.0"
   },
   "devDependencies": {
     "semantic-release": "15.13.12"
