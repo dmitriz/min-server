@@ -43,6 +43,6 @@
     "opn": "^6.0.0"
   },
   "devDependencies": {
-    "semantic-release": "15.13.12"
+    "semantic-release": "15.13.16"
   }
 }
